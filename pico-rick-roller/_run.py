@@ -1,6 +1,8 @@
-# FROM https://create.arduino.cc/projecthub/410027/rickroll-piezo-buzzer-a1cd11?ref=part&ref_id=8233&offset=3
+"""
+    Translated from C++ to python (sorta)
+    https://create.arduino.cc/projecthub/410027/rickroll-piezo-buzzer-a1cd11?ref=part&ref_id=8233&offset=3
+"""
 
-# i like cheese
 from machine import Pin, PWM
 from time import sleep
 import random as r
@@ -73,18 +75,6 @@ def digitalWrite(port, state):
     pass
 
 while True:
-    """
-    for duty in range(65025):
-        pwm.duty_u16(duty)
-        sleep(0.0001)
-    for duty in range(65025, 0, -1):
-        pwm.duty_u16(duty)
-        sleep(0.0001)
-        
-    pwm.duty_u16(r.randrange(0, max_))
-    sleep(0.3)
-    """
-    
     if not len(song1_intro_melody) == len(song1_intro_rhythmn):
         print("there is something up with list values!")
     
